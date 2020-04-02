@@ -1,0 +1,235 @@
+#diaporama
+{
+	position: relative;
+	top: 40px;
+	display: flex;
+	width: 90%;
+	height: 40vh;
+	margin: auto;
+	border: 1px solid black;
+	background: url("images/explic_diapo.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#pause
+{
+	position: absolute;
+	bottom: 1%;
+	left: 53%;
+	font-size: 2em;
+	z-index: 101;
+}
+#play
+{
+	position: absolute;
+    color: rgba(94,145,148,1);
+	bottom: 1%;
+	left: 47%;
+	font-size: 2em;
+	z-index: 101;
+}
+
+.arrows
+{
+	display: none;
+	position: absolute;
+	top: 47%;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	font-size: 2em;
+	color: rgba(41,128,202,1);
+	z-index: 111;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+}
+.flex
+{
+	display: flex;
+    
+}
+
+.map_form 
+{
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+	margin: auto;
+	margin-top: 10px;
+	flex-direction: row;
+	margin-bottom: 50px;
+    justify-content: space-around;
+    
+}
+#map
+{
+	width: 40%;
+	height: 400px;
+	margin-top: 80px;
+	border: 1px solid black;
+}
+#form
+{
+    background-color: rgba(255,255,255,0.4);
+	position: relative;
+	width: 40%;
+	height: 400px;
+	margin-top: 80px;
+	border: 1px solid black;
+	text-align: center;
+}
+.title {
+    margin-top: 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.mid_title {
+    font-size: 1.4em;
+    margin-top : 10px;
+    font-weight: bold;
+    
+}
+#failed {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.input
+{
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 10px;
+    border:1px solid rgba(94,145,148,1);	
+}
+.input_wrong {
+    
+    display: inline-block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 10px;
+    border:1px solid red;
+}
+label
+{
+	display: inline-block;
+	width: 50%;
+	margin: auto;
+	margin-bottom: 10px;
+    font-weight: bold;
+}
+.cool {
+    display: inline-block;
+    font-weight: bold;
+    width: 70%
+}
+#rent_part {
+    display: none;
+    background-color: rgba(255,255,255,0.4);
+	width: 40%;
+	height: 400px;
+	margin-top: 80px;
+	border: 1px solid black;
+	text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+#buttona {
+    
+    text-align: center;
+}
+#canvas_button {
+    display: none;
+}
+#canvas
+{	display: none;
+	position: absolute;
+    bottom: 1%;
+	left: 25%;
+	border: 1px solid black;
+	background: white;
+    color: black;
+}
+.sign {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 3000;
+}
+#rent_failed {
+    color: red;
+    display: none;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#rent_button {
+    
+	position: absolute;
+	bottom: 3%;
+	left: 30%;
+	width: 80px;
+	height: 20px;
+	margin: auto;
+	background: white;
+	color: black;
+	border: 2px solid black;
+	z-index: 1001;
+}
+#cancel {
+    
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	width: 80px;
+	height: 20px;
+	margin: auto;
+	background: white;
+	color: black;
+	border: 2px solid black;
+	z-index: 1001;
+}
+html {
+    background: url(images/background.jpg) no-repeat center;
+}
+#cancel_timer {
+    width: 25%;  
+}
+.green{
+    color: green;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1024px) {
+   
+    #diaporama
+{
+	height: 20vh;
+}
+    .title {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.mid_title {
+    font-size: 1.2em;
+    margin-top : 10px;
+    font-weight: bold;
+    
+}
+#failed {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+    label {
+        font-size: 0.8em;
+    }
+}
+
